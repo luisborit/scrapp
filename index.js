@@ -3,6 +3,8 @@ const fetch = require('node-fetch')
 const express = require('express')
 
 const app = express()
+app.use('/favicon.png', express.static('favicon.png'));
+
 app.set('view engine', 'ejs');
 const comercio = async () => {
     const pageResponse = await fetch('https://elcomercio.pe/ultimas-noticias/')
