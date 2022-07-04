@@ -57,6 +57,6 @@ app.get('/', async (req, res) => {
     })
 })
 
-app.listen('8080',()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('Running on 8080')
 })
