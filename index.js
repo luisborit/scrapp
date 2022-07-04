@@ -28,7 +28,7 @@ const gestion = async () => {
         const title =  $(element).find("h2").text()
         const postBody = $(element).find("p").text();
         const link = $(element).find("h2 > a").attr('href');
-        postArray.push([title, postBody, `https://gestion.pe/${link}`])
+        postArray.push([title, postBody, `https://gestion.pe${link}`])
     })
      return postArray
 }
@@ -44,7 +44,7 @@ const republica = async () => {
         const title =  $(element).find("ul > li > h2").text()
         const postBody = $(element).find("p").text();
         const link = $(element).find("h2 > a").attr('href');
-        postArray.push([title, postBody, `https://larepublica.pe/ultimas-noticias/${link}`])
+        postArray.push([title, postBody, `https://larepublica.pe/ultimas-noticias${link}`])
     })
      return postArray
 }
